@@ -1,6 +1,6 @@
 <template>
     <div id="juegos">
-        <h2 class="text-white text-center">Lista de Juegos</h2>
+        <h2 class="text-white text-center tituloJuegos mb-4">Lista de Juegos</h2>
         <div id="flexPadre" class="d-flex flex-wrap justify-content-center mt-3">
             <div class="card m-1" v-for="(juego, index) in juegos" v-bind:key="index" style="width: 18rem;">
                 <div class="contenedorImagen">
@@ -93,5 +93,13 @@
     }
     .btn-like{
         background-color: azure;
+    }
+    .tituloJuegos{
+       
+        font-size: 2.4rem;
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+  color: #8a1cd4; /* Color de texto en tono púrpura */
+  text-shadow: 4px 4px 0px #000, 6px 6px 0px #8a1cd4; /* Efecto 4D sobresaliente */
     }
 </style>
